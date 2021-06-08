@@ -1,0 +1,5 @@
+google_project_id       = "natta8"
+google_bucket_name      = "nata-bc"
+deployment_environment  = "qa"
+deployment_name         = "hello-world"
+credentials             = "fuchicorp-service-account.json"

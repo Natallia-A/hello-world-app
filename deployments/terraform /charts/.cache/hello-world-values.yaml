@@ -5,8 +5,9 @@
 replicaCount: 10
 
 image:
-  repository: docker.awsnatta.com/hello-world-stage:1ab1e13
-  repository: docker.awsnatta.com/hello-world-stage:01ba8ed
+  # repository: docker.awsnatta.com/hello-world-stage:1ab1e13
+  # repository: docker.awsnatta.com/hello-world-stage:01ba8ed
+  repository: docker.awsnatta.com/hello-world-stage:0b8aefb
   pullPolicy: IfNotPresent
 
 imagePullSecrets: []
@@ -24,14 +25,14 @@ ingress:
     cert-manager.io/cluster-issuer: letsencrypt-prod
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: dev.hello.awsnatta.com
+    - host: qa.hello.fuchicorp.com
       paths:
       - '/'
 
   tls: 
   - secretName: chart-example-tls
     hosts:
-       - dev.hello.awsnatta.com
+       - qa.hello.fuchicorp.com
 
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious
