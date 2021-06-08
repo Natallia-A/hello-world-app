@@ -6,6 +6,7 @@ replicaCount: 1
 
 image:
   repository: docker.awsnatta.com/hello-world-stage:1ab1e13
+  repository: docker.awsnatta.com/hello-world-stage:01ba8ed
   pullPolicy: IfNotPresent
 
 imagePullSecrets: []
