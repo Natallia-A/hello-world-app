@@ -13,7 +13,7 @@ variable "deployment_name" {
     description = "- (Optional) The name of the deployment."
 }
 variable "deployment_environment" {
-    default = "prod"
+    default = "dev"
     description = "- (Optional) The namespace to deploy the helm chart."
 }
 variable "deployment_endpoint" {
@@ -26,10 +26,11 @@ variable "deployment_endpoint" {
     }
     description = "- (Optional) The endpooint of the deployment."
 }
-variable "google_domain_name" {
-  default = "fuchicorp.com"
-}
+
 variable "deployment_image" {
     default = "docker.awsnatta.com/hello-world-stage:0b8aefb"
     description = "- (Optional) The docker image of the deployment."
+}
+variable "google_domain_name" {
+  default = "fuchicorp.com"
 }
